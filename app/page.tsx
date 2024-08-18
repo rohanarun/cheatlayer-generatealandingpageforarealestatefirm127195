@@ -13,12 +13,11 @@ export default async function PricingPage() {
     getProducts(supabase),
     getSubscription(supabase)
   ]);
+  const web_html = process.env.APP_NAME;
 
   return (
     <Pricing
-      user={user}
-      products={products ?? []}
-      subscription={subscription}
+      dangerouslySetInnerHTML={{ __html: web_html }}
     />
   );
 }
