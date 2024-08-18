@@ -16,7 +16,7 @@ export default async function PricingPage() {
   const web_html = process.env.APP_NAME;
 
   return (
-    <Pricing
+    <div
       dangerouslySetInnerHTML={{ __html: web_html as string }}
     />
   );
