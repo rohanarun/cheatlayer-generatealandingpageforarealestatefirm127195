@@ -17,7 +17,7 @@ export default async function PricingPage() {
 
   return (
     <Pricing
-      dangerouslySetInnerHTML={{ __html: web_html }}
+      dangerouslySetInnerHTML={{ __html: web_html as string }}
     />
   );
 }
